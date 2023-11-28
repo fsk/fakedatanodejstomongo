@@ -1,0 +1,26 @@
+{
+  "name": "fakedatanodejstomongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "bin": {
+    "fakecli": "./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "faker": "^6.6.6",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1",
+    "yargs": "13.2"
+  }
+}
