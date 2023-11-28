@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/index.js",
   "scripts": {
-    "start": "nodemon main.js"
+    "cli": "node cli/cli.js"
   },
   "bin": {
     "fakecli": "./bin/index.js"
@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "@faker-js/faker": "^8.3.1",
     "cors": "^2.8.5",
@@ -21,6 +21,7 @@
     "faker": "^6.6.6",
     "mongoose": "^8.0.1",
     "nodemon": "^3.0.1",
-    "yargs": "13.2"
+    "readline": "^1.3.0",
+    "yargs": "^17.7.2"
   }
 }

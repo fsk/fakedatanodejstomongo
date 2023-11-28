@@ -1,4 +1,4 @@
-import mongoose, {Schema} from "mongoose";
+const mongoose = require('mongoose');
 
 const writerSchema = new mongoose.Schema({
     writerName: {
@@ -13,7 +13,7 @@ const writerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    posts: [{ type: Schema.Types.ObjectId, ref: 'Post' }],
+    // posts: [{ type: Schema.Types.ObjectId, ref: 'Post' }],
 }, {
     timestamps: true
 });
