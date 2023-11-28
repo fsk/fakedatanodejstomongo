@@ -1,24 +1,35 @@
 import mongoose, {Schema} from "mongoose";
 
-const writerSchema = new mongoose.Schema({
-    writerName: {
+const userSchema = new mongoose.Schema({
+    userName: {
         type: String,
         required: true
     },
-    writerSurname: {
+    userLastname: {
         type: String,
         required: true
     },
-    writerEmail: {
+    userEmail: {
         type: String,
         required: true
     },
-    posts: [{ type: Schema.Types.ObjectId, ref: 'Post' }],
+    userDescription: {
+        type: String,
+        required: true
+    },
+    userDepartment: {
+        type: String,
+        required: true
+    },
+    userAvatarGithub: {
+        type: String,
+        required: true
+    }
 }, {
     timestamps: true
 });
 
 
-const Writer = mongoose.model('Writer', writerSchema);
+const User = mongoose.model('User', userSchema);
 
-module.exports = Writer;
+export default User;
